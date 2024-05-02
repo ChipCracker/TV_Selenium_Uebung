@@ -3,7 +3,7 @@
 1. `python3 -m venv .venv`
 2. activate the virtual environment\
 macOS: `source ./.venv/bin/activate`\
-Windows: `.venv/bin/activate` 
+Windows: `.venv/Scripts/activate` 
 3. `pip install -r requirements.txt`
 
 ### Http-Server
