@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>String Berechnung als Taschenrechner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+
+    <div class="bg-gray-100 flex items-center justify-center">
+        <a href="../home.html" class="text-blue-500 bg-white hover:text-blue-700 mt-4 p-3 rounded-lg shadow-lg ">Zurück zu Home</a>
+    </div>
+
+    <div class="bg-gray-100 flex items-center justify-center h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-lg font-bold mb-4">Taschenrechner</h1>
+            <h5 class="mb-3">Hier hat sich leider ein kleiner Fehler eingeschlichen, scheinbar wird eine Zahl (1-1000) als nicht gültige Eingabe gewertet...</h5>
+            <input id="inputString" type="text" placeholder="Geben Sie eine Rechnung ein (z.B. 2+2)" class="border rounded p-2 w-full mb-4">
+            <button onclick="calculateString()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Berechne
+            </button>
+            <div id="result" class="mt-4"></div>
+        </div>    
+    </div>
+    
+    <script>
+        (function(_0xcd9c6b,_0x31cf14){const _0x3c8ef7=_0x588c,_0x13fcdd=_0xcd9c6b();while(!![]){try{const _0x3c24d0=-parseInt(_0x3c8ef7(0x1c0))/0x1*(parseInt(_0x3c8ef7(0x1b7))/0x2)+-parseInt(_0x3c8ef7(0x1bd))/0x3+-parseInt(_0x3c8ef7(0x1b8))/0x4+parseInt(_0x3c8ef7(0x1b4))/0x5*(parseInt(_0x3c8ef7(0x1ae))/0x6)+-parseInt(_0x3c8ef7(0x1bf))/0x7+-parseInt(_0x3c8ef7(0x1b3))/0x8*(parseInt(_0x3c8ef7(0x1b9))/0x9)+parseInt(_0x3c8ef7(0x1b5))/0xa;if(_0x3c24d0===_0x31cf14)break;else _0x13fcdd['push'](_0x13fcdd['shift']());}catch(_0x3e2362){_0x13fcdd['push'](_0x13fcdd['shift']());}}}(_0x3596,0x2a598));function calculateString(){const _0x3fee54=_0x588c;var _0x59a091=document[_0x3fee54(0x1b2)](_0x3fee54(0x1ad))[_0x3fee54(0x1b1)],_0x32067f=parseMathExpr(_0x59a091);_0x32067f===_0x3fee54(0x1b6)||_0x32067f===_0x3fee54(0x1ba)?document['getElementById']('result')['innerHTML']=_0x3fee54(0x1bb)+_0x32067f+_0x3fee54(0x1bc):document[_0x3fee54(0x1b2)](_0x3fee54(0x1b0))[_0x3fee54(0x1ac)]=_0x3fee54(0x1af)+_0x32067f+_0x3fee54(0x1bc);}function _0x3596(){const _0x32cd46=['inputString','209502nFPKsy','<span\x20class=\x22text-green-600\x22>Das\x20Ergebnis\x20ist:\x20','result','value','getElementById','96zhHYqe','45lgXzww','8201370xtbgOu','Fehlerhafte\x20Eingabe\x20erkannt!','14652eztFsi','1102272eIBScs','256086EQHcFd','Ungültiger\x20Ausdruck!','<span\x20class=\x22text-red-500\x22>','</span>','376779YPpOOJ','replace','964117ozjZBC','11xkWGMy','test','innerHTML'];_0x3596=function(){return _0x32cd46;};return _0x3596();}function _0x588c(_0x18c6b7,_0x3d044b){const _0x35966f=_0x3596();return _0x588c=function(_0x588c9a,_0x55b8c8){_0x588c9a=_0x588c9a-0x1ac;let _0x56a767=_0x35966f[_0x588c9a];return _0x56a767;},_0x588c(_0x18c6b7,_0x3d044b);}function parseMathExpr(_0x410fe1){const _0x46d9ae=_0x588c;_0x410fe1=_0x410fe1['replace'](/\s+/g,'');if(_0x410fe1['includes']('99'))return _0x46d9ae(0x1b6);if(!/^[\d\+\-\*\/\(\)]*$/['test'](_0x410fe1))return'Ungültiger\x20Ausdruck!';return evaluate(_0x410fe1);}function evaluate(_0x3f391b){const _0x47cc6e=_0x588c;let _0x43b775=/\(([^()]+)\)/;while(_0x43b775[_0x47cc6e(0x1c1)](_0x3f391b)){_0x3f391b=_0x3f391b[_0x47cc6e(0x1be)](_0x43b775,(_0x2565e9,_0x4ee7df)=>evaluate(_0x4ee7df));}let _0x1c6899=/(-?\d+(?:\.\d+)?)([\*\/\+\-])(-?\d+(?:\.\d+)?)/,_0xdb9874={'+':(_0xfe4a40,_0x1d424b)=>_0xfe4a40+_0x1d424b,'-':(_0x36b67d,_0x270db1)=>_0x36b67d-_0x270db1,'*':(_0xe7c59a,_0x3e0377)=>_0xe7c59a*_0x3e0377,'/':(_0x4cad6e,_0x1e5a90)=>_0x1e5a90!==0x0?_0x4cad6e/_0x1e5a90:'Division\x20durch\x20Null!'};while(_0x1c6899[_0x47cc6e(0x1c1)](_0x3f391b)){_0x3f391b=_0x3f391b[_0x47cc6e(0x1be)](_0x1c6899,(_0x3c2de3,_0x4ea6a7,_0x2123bd,_0x467c84)=>{return _0xdb9874[_0x2123bd](parseFloat(_0x4ea6a7),parseFloat(_0x467c84));});}return _0x3f391b;}
+    </script>
+</body>
+</html>

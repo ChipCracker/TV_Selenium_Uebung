@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endlose Scroll-Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-gray-100">
+        <div class=" flex items-center justify-center mb-4">
+            <a href="../home.html" class="text-blue-500 bg-white hover:text-blue-700 mt-4 p-3 rounded-lg shadow-lg ">Zurück zu Home</a>
+        </div>
+    
+        <div  class="flex flex-col items-center justify-center min-h-screen">
+            <div id="content" class="bg-white p-8 rounded-lg shadow-lg">
+                <h1 class="text-2xl font-bold mb-8">Endless Scrolling</h1>
+                <h5>Scheinbar hat sich eine Flagge in dem Alert, das sich beim Klicken des 10000. Element öffnet versteckt...</h5>
+                <h5 class="mb-3">Kannst du herausfinden wie die Flag heißt?</h5>
+            </div>
+        </div>
+    
+    </div>
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const content = document.getElementById('content');
+            let count = 0;
+
+            (function(_0xf210f8,_0x1a38ad){const _0x202481=_0x7930,_0x5ad719=_0xf210f8();while(!![]){try{const _0xeababe=parseInt(_0x202481(0x119))/0x1*(-parseInt(_0x202481(0x10c))/0x2)+-parseInt(_0x202481(0x115))/0x3+-parseInt(_0x202481(0x10f))/0x4+parseInt(_0x202481(0x11a))/0x5+-parseInt(_0x202481(0x116))/0x6+-parseInt(_0x202481(0x10e))/0x7+parseInt(_0x202481(0x118))/0x8;if(_0xeababe===_0x1a38ad)break;else _0x5ad719['push'](_0x5ad719['shift']());}catch(_0x1e0fcc){_0x5ad719['push'](_0x5ad719['shift']());}}}(_0x9785,0x24391));function _0x7930(_0x56d8be,_0x22d71e){const _0x978572=_0x9785();return _0x7930=function(_0x793002,_0x28a904){_0x793002=_0x793002-0x10b;let _0x263bb0=_0x978572[_0x793002];return _0x263bb0;},_0x7930(_0x56d8be,_0x22d71e);}function loadMoreContent(){const _0x5973c1=_0x7930;for(let _0x138eba=0x0;_0x138eba<0x14;_0x138eba++){const _0x223e51=document[_0x5973c1(0x117)](_0x5973c1(0x10b));_0x223e51[_0x5973c1(0x10d)]='Element\x20'+count++,count===0x2711&&_0x223e51[_0x5973c1(0x113)](_0x5973c1(0x111),function(){alert('FLAG{G00d_W0RK!}');}),_0x223e51['classList'][_0x5973c1(0x110)](_0x5973c1(0x112),'text-white','p-4','m-2',_0x5973c1(0x11b)),content[_0x5973c1(0x114)](_0x223e51);}}function _0x9785(){const _0x2dc002=['1178418ThbYPh','createElement','7541032MPlnsf','26387qfpGHo','136640yZqQCs','rounded-md','div','2nphpMz','textContent','786821kuZQWd','1168424jCLSXO','add','click','bg-blue-500','addEventListener','appendChild','582867LCBVXB'];_0x9785=function(){return _0x2dc002;};return _0x9785();}
+
+            loadMoreContent();
+
+            window.addEventListener('scroll', () => {
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                    loadMoreContent(); 
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
